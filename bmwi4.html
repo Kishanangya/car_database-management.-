@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .car-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .car-image {
+            width: 300px; /* Adjust as needed */
+            height: 200px;
+            margin-right: 20px;
+        }
+        .car-details {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .car-name {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .car-price {
+            font-size: 36px;
+            font-weight: bold;
+            color: black;
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            margin-top: 20px; /* Adjust margin */
+            margin-bottom: 20px; /* Add some space between buttons and content */
+            margin-right: 300px;
+        }
+        .car-button {
+            background-color: #ff000067;
+            border: none;
+            color: white;
+            padding: 10px 20px; /* Adjust button padding */
+            text-align: center;
+            text-decoration: none;
+            font-size: 14px; /* Reduce font size */
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0;
+        }
+        table {
+            width: 80%; /* Adjust table width */
+            margin-top: 20px; /* Add margin to the top */
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BMW</h1>
+    </header>
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="tradecar.php">Trade Car?</a>
+        <a href="login.php">Login</a>
+        <a href="signup.php">Sign Up</a>
+    </nav>
+    <div class="container">
+        <div class="car-info">
+            <img class="car-image" src="images/bmwi4.webp" alt="Car Image">
+            <div class="car-details">
+                <div class="car-name">BMW i4 M50</div>
+                <div class="car-price"> $69,523</div>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Specification</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Mileage</td>
+            <td>9 Km</td>
+        </tr>
+        <tr>
+            <td>Gearbox</td>
+            <td>Automatic</td>
+        </tr>
+        <tr>
+            <td>First Registration</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Fuel Type</td>
+            <td>Electric</td>
+        </tr>
+        <tr>
+            <td>Power</td>
+            <td>400Kw</td>
+        </tr>
+        <tr>
+            <td>Seller</td>
+            <td>Dealer</td>
+        </tr>
+    </table>
+
+    <div class="action-buttons">
+        <center>
+            <button class="car-button" onclick="newcar()">New Car</button>
+            <button class="car-button" onclick="usedcar()">Used Car</button>
+            <button class="car-button" onclick="rentalcar()">Rental Car</button>
+        </center>
+    </div>
+
+    <script>
+        function newcar() {
+            // Redirect to new car page
+            window.location.href = 'newcar.php';
+        }
+
+        function usedcar() {
+            // Redirect to used car page
+            window.location.href = 'usedcar.php';
+        }
+
+        function rentalcar() {
+            // Redirect to rental car page
+            window.location.href = 'rentalcar.php';
+        }
+    </script>
+</body>
+</html>

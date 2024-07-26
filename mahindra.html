@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Listings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* Align car blocks vertically */
+            align-items: center;
+            padding: 20px;
+        }
+        .car-block {
+            width: calc(100% - 200px); /* Full width with padding */
+            height: 300px; /* Adjust height as needed */
+            margin-bottom: 20px; /* Add space between car blocks */
+            border: 1px solid #ddd;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+        }
+        .car-image {
+            width: 40%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .car-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .car-details {
+            width: 60%;
+            padding: 45px;
+        }
+        .car-name {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .car-info {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .car-price {
+            font-size: 30px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MAHINDRA</h1>
+    </header>
+    <nav>
+        <a href="index.php">Home</a>
+        <a href="tradecar.php">Trade Car?</a>
+        <a href="login.php">Login</a>
+        <a href="signup.php">Sign Up</a>
+    </nav>
+    <div class="container">
+        <div class="car-block" onclick="goToCarDetails('mahiscorpio.html')">
+            <div class="car-image">
+                <img src="images/mahiscorpio.webp" alt="Car 1">
+            </div>
+            <div class="car-details">
+                <div class="car-name">Mahindra Scorpio</div>
+                <div class="car-info">Petrol/Diesel</div>
+                <div class="car-info">Manual/Automatic</div>
+                <div class="car-info">140hp</div>
+                <div class="car-price">$40,253</div>
+                <div class="car-info">Avg.Ex-Showroom Price</div>
+            </div>
+        </div>
+        <!-- Add more car blocks -->
+        <div class="car-block" onclick="goToCarDetails('mahithar.html')">
+            <div class="car-image">
+                <img src="images/mahithar.jpg" alt="Car 2">
+            </div>
+            <div class="car-details">
+                <div class="car-name">Mahindra Thar </div>
+                <div class="car-info">Petrol/Diesel</div>
+                <div class="car-info">Manual/Automatic</div>
+                <div class="car-info">130/150hp</div>
+                <div class="car-price">$27,963</div>
+                <div class="car-info">Avg.Ex-Showroom Price</div>
+            </div>
+        </div>
+
+        <div class="car-block" onclick="goToCarDetails('mahimarazzo.html')">
+            <div class="car-image">
+                <img src="images/mahimarazzo.avif" alt="Car 3">
+            </div>
+            <div class="car-details">
+                <div class="car-name">Mahindra Marazzo</div>
+                <div class="car-info">Diesel</div>
+                <div class="car-info">Manual</div>
+                <div class="car-info">121hp</div>
+                <div class="car-price">$25,874</div>
+                <div class="car-info">Avg.Ex-Showroom Price</div>
+            </div>
+        </div>
+        <script>
+            function goToCarDetails(url) {
+                window.location.href = url;
+            }
+        </script>
+
+
+
+    </div>
+</body>
+</html>
